@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "ChessBoard.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -11,6 +12,8 @@ QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
+private:
+    ChessBoard* chessBoard;
 
 public:
     MainWindow(QWidget *parent = nullptr);
