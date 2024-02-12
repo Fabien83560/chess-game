@@ -1,7 +1,7 @@
 #include "Pawn.h"
 
-Pawn::Pawn(const std::string& color) : Piece(color) {
-    imgFile = color + "/pawn.png";
+Pawn::Pawn(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/pawn.png";
 }
 
 Pawn::~Pawn() {

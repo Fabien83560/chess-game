@@ -1,6 +1,6 @@
 #include "Piece.h"
 
-Piece::Piece(const string& pieceColor) : color(pieceColor) {
+Piece::Piece(const QString& pieceColor) : color(pieceColor) {
     // Initialisation de la couleur de la pièce
 }
 

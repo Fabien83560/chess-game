@@ -1,19 +1,23 @@
 #ifndef PAWN_H
 #define PAWN_H
 
-#include <string>
+#include <QString>
 #include "Piece.h"
 
 using namespace std;
 
 class Pawn : public Piece {
 private:
-    const string name = "Pawn";
-    string imgFile;
+    const QString name = "Pawn";
+    QString imgFile;
 
 public:
-    Pawn(const string& color);
+    Pawn(const QString& color);
     virtual ~Pawn();
+
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
+
     void move() override;
 };
 

@@ -1,7 +1,7 @@
 #include "King.h"
 
-King::King(const std::string& color) : Piece(color) {
-    imgFile = color + "/king.png";
+King::King(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/king.png";
 }
 
 King::~King() {

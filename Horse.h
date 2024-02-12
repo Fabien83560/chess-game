@@ -1,19 +1,23 @@
 #ifndef HORSE_H
 #define HORSE_H
 
-#include <string>
+#include <QString>
 #include "Piece.h"
 
 using namespace std;
 
 class Horse : public Piece {
 private:
-    const string name = "Horse";
-    string imgFile;
+    const QString name = "Horse";
+    QString imgFile;
 
 public:
-    Horse(const string& color);
+    Horse(const QString& color);
     virtual ~Horse();
+
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
+
     void move() override;
 };
 

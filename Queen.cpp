@@ -1,7 +1,7 @@
 #include "Queen.h"
 
-Queen::Queen(const std::string& color) : Piece(color) {
-    imgFile = color + "/queen.png";
+Queen::Queen(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/queen.png";
 }
 
 Queen::~Queen() {

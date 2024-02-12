@@ -19,6 +19,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void updateInterface();
+
 private:
     Ui::MainWindow *ui;
 

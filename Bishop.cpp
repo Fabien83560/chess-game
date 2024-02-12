@@ -1,7 +1,7 @@
 #include "Bishop.h"
 
-Bishop::Bishop(const std::string& color) : Piece(color) {
-    imgFile = color + "/bishop.png";
+Bishop::Bishop(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/bishop.png";
 }
 
 Bishop::~Bishop() {

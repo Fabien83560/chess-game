@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/pieces/white/tower.png</file>
+        <file>img/pieces/white/queen.png</file>
+        <file>img/pieces/white/pawn.png</file>
+        <file>img/pieces/white/king.png</file>
+        <file>img/pieces/white/horse.png</file>
+        <file>img/pieces/white/bishop.png</file>
+        <file>img/pieces/black/tower.png</file>
+        <file>img/pieces/black/queen.png</file>
+        <file>img/pieces/black/pawn.png</file>
+        <file>img/pieces/black/king.png</file>
+        <file>img/pieces/black/horse.png</file>
+        <file>img/pieces/black/bishop.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>

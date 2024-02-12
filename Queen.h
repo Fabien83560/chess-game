@@ -1,19 +1,23 @@
 #ifndef QUEEN_H
 #define QUEEN_H
 
-#include <string>
 #include "Piece.h"
+#include <QString>
 
 using namespace std;
 
 class Queen : public Piece {
 private:
-    const string name = "Queen";
-    string imgFile;
+    const QString name = "Queen";
+    QString imgFile;
 
 public:
-    Queen(const string& color);
+    Queen(const QString& color);
     virtual ~Queen();
+
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
+
     void move() override;
 };
 

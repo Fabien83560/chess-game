@@ -1,7 +1,7 @@
 #include "Horse.h"
 
-Horse::Horse(const std::string& color) : Piece(color) {
-    imgFile = color + "/horse.png";
+Horse::Horse(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/horse.png";
 }
 
 Horse::~Horse() {

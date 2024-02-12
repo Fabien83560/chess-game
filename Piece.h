@@ -1,20 +1,21 @@
 #ifndef PIECE_H
 #define PIECE_H
 
-#include <string>
+#include <QString>
 
 using namespace std;
 
 class Piece {
 private:
-    string color;
+    QString color;
 
 public:
     Piece() = delete;
-    Piece(const string& pieceColor);
+    Piece(const QString& pieceColor);
     virtual ~Piece();
 
-    inline string getColor() const { return color; }
+    virtual QString getImgFile() const = 0;
+    inline QString getColor() const { return color; }
 
     virtual void move() = 0;
 };

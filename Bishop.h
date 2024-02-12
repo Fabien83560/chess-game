@@ -1,19 +1,23 @@
 #ifndef BISHOP_H
 #define BISHOP_H
 
-#include <string>
+#include <QString>
 #include "Piece.h"
 
 using namespace std;
 
 class Bishop : public Piece {
 private:
-    const string name = "Bigshop";
-    string imgFile;
+    const QString name = "Bigshop";
+    QString imgFile;
 
 public:
-    Bishop(const string& color);
+    Bishop(const QString& color);
     virtual ~Bishop();
+
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
+
     void move() override;
 };
 

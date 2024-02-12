@@ -1,19 +1,23 @@
 #ifndef KING_H
 #define KING_H
 
-#include <string>
+#include <QString>
 #include "Piece.h"
 
 using namespace std;
 
 class King : public Piece {
 private:
-    const string name = "King";
-    string imgFile;
+    const QString name = "King";
+    QString imgFile;
 
 public:
-    King(const string& color);
+    King(const QString& color);
     virtual ~King();
+
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
+
     void move() override;
 };
 

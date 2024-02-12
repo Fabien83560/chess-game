@@ -1,21 +1,22 @@
 #ifndef TOWER_H
 #define TOWER_H
 
-#include <string>
 #include "Piece.h"
+#include <QString>
 
 using namespace std;
 
 class Tower : public Piece {
 private:
-    const string name = "Tower";
-    string imgFile;
+    const QString name = "Tower";
+    QString imgFile;
 
 public:
-    Tower(const string& color);
+    Tower(const QString& color);
     virtual ~Tower();
 
-    inline string getName() const { return name; }
+    inline QString getName() const { return name; }
+    inline QString getImgFile() const override { return imgFile; }
 
     void move() override;
 };

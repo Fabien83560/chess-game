@@ -1,7 +1,7 @@
 #include "Tower.h"
 
-Tower::Tower(const std::string& color) : Piece(color) {
-    imgFile = color + "/tower.png";
+Tower::Tower(const QString& color) : Piece(color) {
+    imgFile = ":/img/pieces/" + color + "/tower.png";
 }
 
 Tower::~Tower() {
